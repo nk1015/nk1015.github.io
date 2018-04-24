@@ -118,7 +118,7 @@
     <div class="staticrypt-form">
         <div class="staticrypt-instructions">
             <p class="staticrypt-title">Watchful Eye</p>
-            <p><p>Input password to access hyperlink database</p>
+            <p><p>Input Password</p>
 </p>
         </div>
 
@@ -6140,7 +6140,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = '05199b5e8ec75ec12643c2b3cf53a5ef252c6eb54b1c972ccaff1bed49861e11U2FsdGVkX1/GPcXxLpvbwkIWckGPmu3mHSGyqtcj2HyJnaY5O+lYuBTa9M5TUhGZw9EU4apyDuPVAYOsM9bBGWa7EzJ/7ORtuQpVBSq/yPUTyWEdRD7KHWzSyZCRsp9QJCtvt6M3ksgsvz/1hdfR2FrICNOBrX/00DmN+nmAFinNMl2CSbVu/S9cx6tKyFB1nHqjcY1sUSi/N7g7aLVBsL0TrUOvPCxh5xsFP4/c2VyskPoQDOOfSrnb+936e7BbnmRXXpF+v+g0bJJL46IimB/LuV/BsphSOYSJGNJ9PsWFqBLToGAl5sGG16Itk2tQ',
+            encryptedMsg = '0305e9ae42d0ee23ad7e8b4054c40b6213eaecfbbe99bdf82f6547980f9ada59U2FsdGVkX19wF+5IQNqdH+GnBzKIIQdsN1nWRhpblQ/X2kEbmWQbzXmUfJ6+3PCHz0dhdWVGS5P/MAbvNsBOf6lckkw0e0vux/O0jNynKkeJ8cmV3KWcRIcrCZ4lbbfzFPwX6+oCSr9jJB42J0shES9iJnYeM+bc8M2s3EXvznWyMyaMhj4MWpYYHpDDJNsKXG+qQcAaRxBNoSr3tBMlp3XTe4S10J1srj9LOhSONZSFg4vFeJG3kWX+r/b+4B5mywB/CDphZE3IcvLDVsgOOPVEIm41jrmtZJxz3jmvFLyAujHr2uMIqNHMSopko0qy+zZzkkR+6BybJdOXGul8oA==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
